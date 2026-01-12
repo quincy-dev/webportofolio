@@ -1,0 +1,147 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY + BACKGROUND */
+body {
+    color: #222;
+    line-height: 1.6;
+    background-image: url("src/background.jpg"); /* ganti dengan gambar background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* OVERLAY BIAR TEKS JELAS */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.88);
+    z-index: -1;
+}
+
+/* NAVIGATION */
+.links {
+    display: flex;
+    gap: 20px;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.subhead h1 {
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.subhead p {
+    font-size: 16px;
+    color: #555;
+}
+
+.photo img {
+    width: 180px;
+    border-radius: 12px;
+}
+
+/* SECTION */
+section {
+    padding: 50px 60px;
+}
+
+section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+section p {
+    max-width: 700px;
+    color: #444;
+}
+
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* SKILL ICON */
+#skill i {
+    margin-right: 8px;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 220px;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+#contact i {
+    margin-right: 8px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
