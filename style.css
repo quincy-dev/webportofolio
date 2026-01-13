@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* BODY + BACKGROUND */
+
 body {
     color: #ffffff;
     line-height: 1.6;
@@ -22,7 +22,7 @@ body {
     position: relative;
 }
 
-/* Overlay gelap agar background tetap keliatan tapi tidak terlalu terang */
+
 body::before {
     content: "";
     position: fixed;
@@ -31,7 +31,7 @@ body::before {
     z-index: -1;
 }
 
-/* NAVIGATION */
+
 .links {
     display: flex;
     gap: 30px;
@@ -72,7 +72,7 @@ body::before {
     width: 100%;
 }
 
-/* HEADER */
+
 .head {
     display: flex;
     justify-content: space-between;
@@ -107,7 +107,7 @@ body::before {
     border-color: #6C63FF;
 }
 
-/* SECTION */
+
 section {
     padding: 60px 60px;
     background: rgba(40, 40, 40, 0.7);
@@ -142,7 +142,7 @@ section p {
     margin-bottom: 15px;
 }
 
-/* LIST */
+
 ul {
     padding-left: 20px;
     list-style: none;
@@ -163,7 +163,7 @@ li::before {
     font-size: 20px;
 }
 
-/* SKILL ICON */
+
 #skill ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -191,7 +191,7 @@ li::before {
     font-size: 20px;
 }
 
-/* GALLERY */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -215,7 +215,7 @@ li::before {
     border-color: rgba(108, 99, 255, 0.6);
 }
 
-/* CONTACT */
+
 #contact ul {
     margin-top: 20px;
 }
@@ -270,7 +270,7 @@ li::before {
     color: #888888;
 }
 
-/* FOOTER */
+
 footer {
     text-align: center;
     padding: 30px;
@@ -281,7 +281,7 @@ footer {
     margin-top: 40px;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
     .head {
         flex-direction: column-reverse;
